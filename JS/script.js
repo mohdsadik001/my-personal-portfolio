@@ -5,6 +5,26 @@ const sections = document.querySelectorAll("section");
 const menuIcon = document.querySelector("#menu-icon");
 const navBar = document.querySelector("header nav");
 
+const colorBtn1 = document.querySelector('.box1');
+const colorBtn2 = document.querySelector('.box2');
+const colorBtn3 = document.querySelector('.box3');
+const colorBtn4 = document.querySelector('.box4');
+
+colorBtn1.addEventListener('click', () => {
+    document.documentElement.style.setProperty('--main-color', '#ff7b00')
+})
+
+colorBtn2.addEventListener('click', () => {
+    document.documentElement.style.setProperty('--main-color', '#00c3ff')
+})
+
+colorBtn3.addEventListener('click', () => {
+    document.documentElement.style.setProperty('--main-color', '#f5b400')
+})
+
+colorBtn4.addEventListener('click', () => {
+    document.documentElement.style.setProperty('--main-color', '#06bb9d')
+})
 
 
 menuIcon.addEventListener("click", () => {
